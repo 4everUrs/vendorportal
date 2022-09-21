@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Purchase;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -48,5 +50,7 @@ Route::middleware([
 
 Route::middleware('auth')->group(function(){
     Route::view('request','livewire.requests-lists')->name('requests');
+    Route::get('purchase',Purchase::class)->name('purchase');
     Route::view('apply','livewire.modal')->name('apply');
+    
 });

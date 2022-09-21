@@ -131,7 +131,7 @@
             <hr class="my-4 md:min-w-full" />
             <!-- Heading -->
             <h6
-              class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
+              class="md:min-w-full text-slate-800 text-xs uppercase font-bold block pt-1 pb-4 no-underline"
             >
               Menu
             </h6>
@@ -140,14 +140,38 @@
             <ul class="md:flex-col md:min-w-full flex flex-col list-none">
               <li class="items-center">
                 <a
+                  href="{{route('dashboard')}}"
+                  class="text-xs uppercase py-3 font-bold block text-black-800 hover:text-slate-400">
+                  <i class="fa-duotone fa-house mr-2 text-sm opacity-75"></i>
+                  Home
+                </a>
+              </li>
+            </ul>
+
+            <ul class="md:flex-col md:min-w-full flex flex-col list-none">
+              <li class="items-center">
+                <a
+                  href="{{route('purchase')}}"
+                  class="text-xs uppercase py-2 font-bold block text-black-800 hover:text-slate-400">
+                  <i class="mr-2 text-sm opacity-75"></i>
+                  Purchase Order
+                </a>
+              </li>
+            </ul>
+
+
+            <ul class="md:flex-col md:min-w-full flex flex-col list-none">
+              <li class="items-center">
+                <a
                   href="{{route('requests')}}"
-                  class="text-xs uppercase py-3 font-bold block text-black-800 hover:text-slate-400"
+                  class="text-xs uppercase py-2 font-bold block text-black-800 hover:text-slate-400"
                 >
-                  <i class="fas fa-clipboard-list mr-2 text-sm opacity-75"></i>
+                  <i class="mr-2 text-sm opacity-75"></i>
                   Shop
                 </a>
               </li>
-
+            </ul>
+           
             <!-- Divider -->
             <hr class="my-4 md:min-w-full" />
             <!-- Heading -->
